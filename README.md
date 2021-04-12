@@ -4,7 +4,7 @@
 ### Github Repository:
 [GitHub - Cocktail Cache Terminal App](https://github.com/kimckenna/cocktail_cache)<br>
 
-<img src="./docs/Github.png" alt="Github Screenhot"/>
+<img src="./docs/Github.png" alt="Github Screenshot"/>
 
 ---
 
