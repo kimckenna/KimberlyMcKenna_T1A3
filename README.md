@@ -24,7 +24,7 @@ The intended audience of Cocktail Cache is anyone who loves a cocktail and is lo
  
 The ability to store multiple users' favourites makes this app perfect for those who enjoy a social drink with others; maybe one person wants their go-to cocktail, whilst someone else wants to be adventurous. This way they can both find what they’re after and reference it again if it goes down a treat.
  
-### Present Use
+### Present
  
 Cocktail Cache was built with simplicity in mind.
 After you've entered a new username or selected an existing, you're able to start exploring. Here on out all navigation is menu based and no written input is required.
@@ -126,7 +126,7 @@ As the application relies on persistent storage; if the required files are not w
 
 User experience was kept in mind throughout the application build with different user journey's tested to find potential errors that could arise. 
 
-Please refer to Error Testing for a snapshot of a test case.
+Please refer to Error Testing for a Test Case of Cocktail Cache's Features and Menus
  
 ---
 
@@ -268,8 +268,192 @@ This test when successful is checking that the the cocktail is being added to th
 
 ---
 
- 
+### Error Handling: Test Case of Cocktail Cache Features and Menus
 
+For the purpose of explaining Cocktail Cache features and UX, I’m going to refer to the potential users navigating the app by name: 
+
+	User 1 : Michelle (a friendly, caring, conformist; favourite cocktail: Martini) 
+	User 2 : Ed (Michelle’s husband; favourite cocktail: Beer) 
+
+When Michelle first opens Cocktail Cache she’s greeted with a welcome page. Michelle takes the time to read the brief description and takes note when navigating to look out for any ‘cyan’ text. Michelle navigates to the ‘User Menu’. 
+
+As Cocktail Cache has not been used prior to Michelle accessing the app, Michelle is requested to add a new username; Michelle feels it would be most appropriate to put ‘Michelle’
+
+Michelle is now navigated to the main menu where the core features are outlined as menu options: 
+
+Make a Selection:
+ (Press ↑/↓ arrow to move and Enter to select)
+‣ Random Cocktail
+✘ Favourites    (You don't currently have any favourites)
+  Search Cocktails
+  Return to User Menu
+  Exit 
+
+Michelle notices the Favourites option is crossed out (which makes sense to Michelle as she’s yet to view any cocktails) so decides to select: ‘Search Cocktails’ and see what cocktails Cocktail Cache has on offer. 
+
+Michelle is now given the choice:
+
+Make a Selection:
+ (Press ↑/↓ arrow to move and Enter to select)
+‣ Search Cocktails by Alcohol
+  Search all Cocktails
+
+Michelle decides to ‘Search all Cocktails’ and see if they have any of her favourites. 
+
+Choose a Cocktail:
+ (Press ↑/↓/←/→ arrow to move, Enter to select and letters to filter)
+‣ Vesper
+  Bacardi
+  Negroni
+  Rose
+  Old Fashioned
+  Tuxedo
+
+Now in the ‘Search all Cocktails’ menu, Michelle notices only 6 options, which doesn’t feel like the extensive list she was expecting but she reads the cyan blue text and realises if she uses her arrow keys or starts typing she can find more options. 
+
+Michelle decides to try it out and see if they have a Martini; she starts typing and is impressed to find several options, she sees a French Martini and decides this is the one. 
+
+Choose a Cocktail:
+ (Filter: "mar")
+  Espresso Martini
+  Margarita
+  Lemon Drop Martini
+‣ French Martini
+  Bloody Mary
+  Tommy's Margarita
+
+Michelle is presented with the French Martini cocktail card which includes;
+Cocktail name
+Glass type
+Category
+Ingredients 
+Preparation
+
+Michelle notices this martini includes pineapple juice; never having tried a martini with pineapple juice she decides she’d like to try this later. 
+
+Michelle notices another menu: 
+
+Make a Selection:
+ (Press ↑/↓ arrow to move and Enter to select)
+‣ Add to Favourites
+  Search Again
+  Exit to Main Menu
+
+Michelle decides to Add to Favourites; once added; Michelle notices her only options are to ‘Search Again’ or ‘Exit to Main Menu’
+
+Make a Selection:
+ (Press ↑/↓ arrow to move and Enter to select)
+✘ Add to Favourites    (This cocktail is already favourited)
+‣ Search Again
+  Exit to Main Menu
+
+Michelle decides to ‘Search Again’ and is returned to the ‘Search Menu’
+
+
+Now back at the ‘Search Menu’ Michelle decides to search by alcohol and decides on Vodka. 
+
+After selecting Vodka, Michelle is taken to another menu that operates like the others and includes a range of cocktails, she decides to scroll through and see what some of the options are; she notices ‘Harvey Wallbanger’ and decides to see what kind of cocktail that is. 
+
+Select an Alcohol:
+ Vodka
+Choose a Cocktail:
+ 
+  Moscow Mule
+  Dirty Martini
+  Russian Spring Punch
+  Cosmopolitan
+  Kamikaze
+‣ Harvey Wallbanger
+
+In ‘Harvey Wallbanger’ Michelle reads the ingredients and realises a Harvey Wallbanger is a fancy ‘Screwdriver’ and decides to leave it for now. Michelle decides to ‘Exit to Main Menu’.
+
+Make a Selection:
+ (Press ↑/↓ arrow to move and Enter to select)
+‣ Random Cocktail
+  Favourites
+  Search Cocktails
+  Return to User Menu
+  Exit
+
+Now back in the ‘Main Menu’ Michelle notices ‘Favourites’ is no longer crossed out and decides to check it out. 
+
+Make a Selection:
+ (Press ↑/↓ arrow to move and Enter to select)
+‣ Random Favourite
+  View all Favourites
+  Favourites Management
+
+Michelle decides to see a ‘Random Favourite’ and is provided with ‘French Martini’, Michelle realises she’s only favourited one cocktail so far so this makes sense. 
+
+Michelle is presented with the following options:
+
+Make a Selection:
+ (Press ↑/↓ arrow to move and Enter to select)
+‣ Return to Favourites Menu
+  Exit to Main Menu
+
+Michelle selects ‘Return to Favourites Menu’ where she decides to check out ‘Favourites Management’. 
+Michelle is immediately presented with the option to delete a cocktail/s.
+
+Make a Selection:
+ Favourites Management
+Select the Cocktail/s you wish to delete from Favourites:
+ (Press ↑/↓ arrow to move, Space/Ctrl+A|R to select (all|rev) and Enter to finish)
+‣ ⬡ French Martini
+ 
+Michelle panics as she doesn’t want to delete her favourites but she reads the bright red menu message which says press Enter to finish so she does and hopes for the best. 
+
+Michelle is again presented with the option to ‘Return to Favourites Menu’ or ‘Exit to Main Menu’; she decides to ‘Return to Favourites Menu’. Michelle decides to select ‘View all Favourites’ and double check her ‘French Martini’ is still there; and it is! 
+Michelle selects ‘French Martini’ to view (as her only cocktail) and decides to ‘Return to Main Menu’.
+
+After all this excitement Michelle decides to exit to the ‘Return to User Menu’ and calls over Ed to add his own account. 
+
+At Michelle’s behest, Ed adds a ‘New User’, Ed does not understand why he has to make his own account (he doesn’t even like cocktails) so decides to slam the keyboard with a random set of keys and settles on ‘2jl1knbm3ewfrhdju’ as a username. 
+
+Ed is presented with the Main Menu; unamused and unable to view favourites he presses enter and is taken to a ‘Random Cocktail’.
+Ed is presented with ‘Bramble’. 
+Not reading the menu, Ed presses enter; the cocktail doesn’t change so Ed presses enter again. This time he notices the cocktail has changed to ‘Stinger’. Ed presses enter again and again the cocktail doesn’t change; Ed decides to read the page and is presented with: 
+
+Make a Selection: (Press ↑/↓ arrow to move and Enter to select)
+✘ Add to Favourites    (This cocktail is already favourited)
+‣ Run Again
+  Exit to Main Menu
+
+Ed realises he’s been selecting ‘Add to Favourites’ and ‘Run Again’;  he presses enter a few more times before getting bored and deciding to Exit to Main Menu. 
+
+Make a Selection:
+ (Press ↑/↓ arrow to move and Enter to select)
+‣ Random Cocktail
+  Favourites
+  Search Cocktails
+  Return to User Menu
+  Exit
+
+Ed decides to check out his handy work and selects ‘Favourites’, Ed choses ‘Favourites Management’.
+
+Ed is alerted to the fact he can delete cocktails. This suits Ed perfectly, he decides to follow the bright red message and selects all with Ctrl+A
+
+Make a Selection: Favourites Management
+Select the Cocktail/s you wish to delete from Favourites:  Bramble, Stinger, God Father, Vampiro, Planter's Punch, Margarita, Casino
+‣ ⬢ Bramble
+  ⬢ Stinger
+  ⬢ God Father
+  ⬢ Vampiro
+  ⬢ Planter's Punch
+  ⬢ Margarita
+
+Ed presses Enter and is returned to the Main Menu. 
+
+Make a Selection: (Press ↑/↓ arrow to move and Enter to select)
+‣ Random Cocktail
+✘ Favourites    (You don't currently have any favourites)
+  Search Cocktails
+  Return to User Menu
+  Exit
+
+Ed decides he’s had enough and decides to Exit. 
+
+---
 
 
 
