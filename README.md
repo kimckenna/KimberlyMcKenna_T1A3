@@ -4,6 +4,8 @@
 ### Github Repository:
 [GitHub - Cocktail Cache Terminal App](https://github.com/kimckenna/cocktail_cache)<br>
 
+---
+
 ## PURPOSE AND SCOPE
 
 ### Intention
@@ -62,7 +64,7 @@ At a minimum the feature will allow the user to add a cocktail to favourites but
 This feature I'm intending to keep quite simple. When a user generates a random cocktail at any available menu selection in the app, they'll be provided with a cocktail generated from a list of cocktails stored within persistent storage. I'm intending for this to be available on all cocktails and their favourites list.
  
 The user will then be able to add to favourites list if it's not already favourited, or request another random cocktail.
- 
+
 ### Search for a Cocktail
  
 *Search the extensive list of cocktails by name or ingredient or explore your own favourites*
@@ -90,6 +92,8 @@ Any additional errors I find during the build process or testing I want to prese
 
 Ultimately I don't want any user cases where the app has been stressed and responds with a Standard Error or produces a bug rather than an intended error message or continuation of the app flow with the user being none the wiser.  
 
+---
+
 ### User Interaction Journey
 
 After building some of my app and running testing I decided when entering Cocktail Cache greeting the user with a brief description of the application and it’s features would improve the user experience; helping provide the user with a quick explanation of the application before they start navigating their way through if they haven't read the README or app documentation. 
@@ -99,6 +103,8 @@ A small note is made to the menus advising a 'how to use' for each will be displ
 In the instance the user has any troubles there is also a quick help guide which can be accessed through the command line and provides further detail into the set up and functionality of Cocktail Cache.
  
 There is some functionality available when accessing Cocktail Cache through the command line arguments; these are listed within the help section and on the documentation README. The user is able to access all the core features and if not looking to save a cocktail to their favourites is able to view a cocktail within one argument with no additional navigation.
+
+---
 
 ### Error Handling
 
@@ -113,6 +119,8 @@ In line with this, new users or users with no favourites do not have the ability
 As hoping for if a user displays a random cocktail or searches a cocktail that already exists within their favourite’s list they are provided a disable message on the Favourite Cocktail option to prevent duplicates within the Favourites. 
  
 As the application relies on persistent storage; if the required files are not where they are expected on execution of the app, the user will be provided with a message directing them back to github to reclone the repository and a fix has been implemented if the user.json file is missing the empty hash so the error resolves and run without the user being advised. 
+
+---
 
 ### User Testing 
 
@@ -170,7 +178,51 @@ As a result I chose to:
 
 ## ERROR TESTING 
 
-### Manual Feature Test 
+### Manual Feature Test:  Search Feature
+
+*Test search for a chosen cocktail*
+
+#### Test 1
+
+*Search for a known cocktail within the Search all Cocktails function*
+
+**Prior to Test:** 
+- Create New User: 'test'
+- This will ensure user has no Favourites 
+
+1. Select Search Cocktails
+2. Select Search all Cocktails
+3. Start typing 'Pi'
+3. ‘Pisco Sour’ should populate
+4. Press enter for ‘Pisco Sour’
+
+**Expectation:** Terminal presents ‘Pisco Sour’ cocktail card 
+
+This test shows the Search All function is correctly working from origin point: main menu as we were able to search for a random cocktail after navigating through the main menu to the search menu for a cocktail that is known to exist within the cocktails.json file and the result was the ‘Pisco Sour’ Cocktail card when requested.
+
+#### Test 2
+
+*Search for a cocktail with a known ingredient and have it present correctly within the Search Alcohol function*
+
+**Prior to Test:** 
+- Complete Test 1: *Search for a known cocktail within the Search all Cocktails function* **OR** 
+- Navigate to the Cocktail Card within the Cocktail Search so a Cocktail is presented on the terminal at the start of the test.
+
+1. Select Search Again
+2. Select Search Cocktails by Alcohol
+3. Start typing 'pi'
+4. 'Pisco’ should populate
+5. Press enter for ‘Pisco’
+6. 'Pisco Sour’ should populate
+7. Press enter for ‘Pisco Sour’
+
+**Expectation:** Terminal presents ‘Pisco Sour’ cocktail card 
+
+This test shows not only the Search by Alcohol function is correctly working but as the test was launched from the Search sub menu we know the Search Again function correctly directs the user back to the Search Menu. We were able to search for a known ingredient 'Pisco' and view all related cocktails including this ingredient and when said cocktail was selected we were presented with the ‘Pisco Sour’ Cocktail card as requested.
+
+---
+
+### Manual Feature Test: Favourites Feature
 
 *Test user favourites updates and persistent storage is functional*
 
@@ -178,15 +230,19 @@ As a result I chose to:
 
 *Test a cocktail is added to selected user favourites*
 
-1. Start test with ‘Vesper’ cocktail displaying on terminal 
+**Prior to Test:** 
+- Complete Manual Feature Test: Search Feature
+- Feature will work without doing so but having completed either Search Feature Test 1 or Test 2 will have you already sitting on the 'Pisco Sour' cocktail card and logged in as User: 'test'.
+
+1. Start test with ‘Pisco Sour’ cocktail displaying on terminal 
 2. Add cocktail to Favourites
 3. Return to Main Menu
 4. Access Favourites
 5. View all Favourites List
-6. ‘Vesper’ is in list
-7. Select ‘Vesper’
+6. ‘Pisco Sour’ is in list
+7. Select ‘Pisco Sour’
 
-**Expectation:** Terminal presents ‘Vesper’ cocktail card 
+**Expectation:** Terminal presents ‘Pisco Sour’ cocktail card 
 
 This test when successful is checking that the the cocktail is being added to the User Favourites correctly and is accessible within the session. 
 
@@ -194,22 +250,23 @@ This test when successful is checking that the the cocktail is being added to th
 
 *Test cocktail remains in user favourites after exiting application and starting a new session.*
 
-1. Prior test: *Test a cocktail is added to selected user favourites* is successful 
-
+1. Complete prior test: *Test a cocktail is added to selected user favourites* is successful 
 2. Start fresh session
 3. Enter Cocktail Cache
 4. Select Existing User 
-5. Select same username as prior session testing *Test a cocktail is added to selected user favourites*
+5. Select 'test' user: 
+	(same as prior session testing: *Test a cocktail is added to selected user favourites*)
 6. Access Favourites
 7. View all Favourites List
-8. ‘Vesper’ is in list
-9. Select ‘Vesper’
+8. ‘Pisco Sour’ is in list
+9. Select ‘Pisco Sour’
 
-**Expectation:** Terminal presents ‘Vesper’ cocktail card 
+**Expectation:** Terminal presents ‘Pisco Sour’ cocktail card 
 
 
 This test when successful is checking that the the cocktail is being added to the User Favourites correctly and is still accessible within a new session indictaing the persistent storage is functional.
 
+---
 
  
 
