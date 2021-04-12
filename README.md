@@ -4,9 +4,6 @@
 ### Github Repository:
 [GitHub - Cocktail Cache Terminal App](https://github.com/kimckenna/cocktail_cache)<br>
 
-### Trello Project Management:
-[Trello Board - Cocktail Cache Terminal App](https://trello.com/b/izgiJ6wC/cocktail-terminal-app)<br>
-
 ## PURPOSE AND SCOPE
 
 ### Intention
@@ -36,7 +33,9 @@ Have a particular Aunt who loves Brandy; search by ingredient.
  
 Cocktail Cache; a curated app of cocktail classics. 
 
-## Features
+---
+
+## FEATURES
 
 The primary features of Cocktail Cache are:
  
@@ -74,8 +73,9 @@ If the user's search is outside the favourites list and the cocktail isn't alrea
  
 ** Note: after commencing the build of the application I decided to forgo the categories search in lieu of a search all ‘by name’. The heart of the categories search was to show all cocktails and there wasn't a way to add a subheading whilst using TTY Prompt. As TTY Prompt was crucial in keeping consistency across my menu’s UI; the categories selection priority was downgraded and moved to backlog. The category identification code has been kept so this functionality could be added in the future.
  
+---
 
-## User Experience 
+## USER EXPERIENCE 
 
 ### User Interaction Plan 
 
@@ -112,29 +112,67 @@ In line with this, new users or users with no favourites do not have the ability
  
 As hoping for if a user displays a random cocktail or searches a cocktail that already exists within their favourite’s list they are provided a disable message on the Favourite Cocktail option to prevent duplicates within the Favourites. 
  
-As the application relies on persistent storage if the required files are not where they are expected on execution of the app, the user will be provided with a message directing them back to github to reclone the repository and a fix has been implemented if the user.json file is missing the empty hash so the error resolves and run without the user being advised. 
+As the application relies on persistent storage; if the required files are not where they are expected on execution of the app, the user will be provided with a message directing them back to github to reclone the repository and a fix has been implemented if the user.json file is missing the empty hash so the error resolves and run without the user being advised. 
 
-### Error Handling Testing 
+### User Testing 
 
+User experience was kept in mind throughout the application build with different user journey's tested to find potential errors that could arise. 
 
+Please refer to Error Testing for a snapshot of a test case.
  
+---
 
-## Control Flow Diagram 
+## CONTROL FLOW DIAGRAM 
 
+<img src="./docs/Cocktail_Cache_UML.png" alt="Cocktail Cache UML Diagram"/>
 
-## Implementation Plan 
+---
+
+## IMPLEMENTATION 
 
 [Trello Board - Cocktail Cache Terminal App](https://trello.com/b/izgiJ6wC/cocktail-terminal-app)<br>
 
+Trello was used to create and manage the project flow of this terminal application and is the best way to ascertain the direction and execution of the build process.
+ 
 ### Initial Implementation Plan
+ 
+The intended implementation of Cocktail Cache through Trello was as follows;
+ 
+1. Create tasks in the backlog.
+2. Code MVP features first.
+3. If a bug arises and can be left until MVP works, create a card to fix the error later.
+4. If a bug is preventing MVP element working; set as priority and fix.
+5. When higher priority cards have been implemented, tested and moved to done; move the card that is naturally next priority based on current build progress to, To Do so can be looked at next.
+6. Hold partially completed cards within Doing; if get stuck on one task try focusing on another, To Do by moving to Doing.
+7. Once the build of the card is completed and the checklist covered, move to Testing then Done.
+8. If bug arises but feature was previously completed, create new Bug card.
+9. If additional functionality or code improvements are thought of during build; create cards in the backlog.
+10. Only start Design Extras or Code Improvements once MVP and all known bugs impacting app have been dealt with.
+11. Use App management for assignment requirements and app set up.
+12. Assign time frame due date to card once moved to doing.
+13. Try to implement expected time to complete the card based on expected length e.g. short task - no tag, medium task under 2hrs, long task over 2hrs. Adjust these as requirements.
+14. Prioritise feature build based on knowledge and what has the biggest impact on other features.
+ 
+As a result I chose to:
+ 
+- Set up File structure
+- Start on cocktail card formatting
+- Build random function
+- Build search function
+- Build menus to connect features to primary rb doc and create flow of application
+- Build Favourites function
+- Build features secondary menus
+- Build remove from favourites function
+- Complete Error testing
+- Add Design/ Usability extras or Code Improvements based on level of improvement to MVP
+
+---
+
+## ERROR TESTING 
 
 
 
-## READ ME 
-
-- install steps 
-- dependencies
-- system requirements 
+ 
 
 
 
