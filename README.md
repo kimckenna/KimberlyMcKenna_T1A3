@@ -4,6 +4,8 @@
 ### Github Repository:
 [GitHub - Cocktail Cache Terminal App](https://github.com/kimckenna/cocktail_cache)<br>
 
+<img src="./docs/Github.png" alt="Github Screenhot"/>
+
 ---
 
 ## PURPOSE AND SCOPE
@@ -139,6 +141,9 @@ Please refer to Error Testing for a Test Case of Cocktail Cache's Features and M
 ## IMPLEMENTATION 
 
 [Trello Board - Cocktail Cache Terminal App](https://trello.com/b/izgiJ6wC/cocktail-terminal-app)<br>
+
+<img src="./docs/T1A2_trello_1.png" alt="Trello Screenshot"/>
+<img src="./docs/T1A2_trello_2.png" alt="Trello Screenshot"/>
 
 Trello was used to create and manage the project flow of this terminal application and is the best way to ascertain the direction and execution of the build process.
  
