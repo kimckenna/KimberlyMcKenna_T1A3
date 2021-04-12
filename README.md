@@ -170,6 +170,45 @@ As a result I chose to:
 
 ## ERROR TESTING 
 
+### Manual Feature Test 
+
+*Test user favourites updates and persistent storage is functional*
+
+#### Test 1:
+
+*Test a cocktail is added to selected user favourites*
+
+1. Start test with ‘Vesper’ cocktail displaying on terminal 
+2. Add cocktail to Favourites
+3. Return to Main Menu
+4. Access Favourites
+5. View all Favourites List
+6. ‘Vesper’ is in list
+7. Select ‘Vesper’
+
+**Expectation:** Terminal presents ‘Vesper’ cocktail card 
+
+This test when successful is checking that the the cocktail is being added to the User Favourites correctly and is accessible within the session. 
+
+#### Test 2:
+
+*Test cocktail remains in user favourites after exiting application and starting a new session.*
+
+1. Prior test: *Test a cocktail is added to selected user favourites* is successful 
+
+2. Start fresh session
+3. Enter Cocktail Cache
+4. Select Existing User 
+5. Select same username as prior session testing *Test a cocktail is added to selected user favourites*
+6. Access Favourites
+7. View all Favourites List
+8. ‘Vesper’ is in list
+9. Select ‘Vesper’
+
+**Expectation:** Terminal presents ‘Vesper’ cocktail card 
+
+
+This test when successful is checking that the the cocktail is being added to the User Favourites correctly and is still accessible within a new session indictaing the persistent storage is functional.
 
 
  
