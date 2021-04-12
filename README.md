@@ -1,4 +1,4 @@
-# Terminal Application
+# Cocktail Cache: Terminal Application
 #### Kim McKenna
 
 ### Github Repository:
