@@ -460,7 +460,9 @@ Ed decides he’s had enough and decides to Exit.
 
 ---
 
+## CREDITS
 
+[Teijo - IBA Cocktails JSON](https://github.com/teijo/iba-cocktails/blob/master/recipes.json)<br>
 
 
 
